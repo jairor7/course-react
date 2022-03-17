@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #21232a;
+  color: #ffffff;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 40px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1.6rem;
+}
