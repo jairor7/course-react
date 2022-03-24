@@ -2,7 +2,7 @@ body {
   padding: 50px;
 }
 
-p {
+p.todo-task {
   cursor: pointer;
   margin: 0;
 }
