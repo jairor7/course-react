@@ -19,7 +19,9 @@ export const MultipleCustomHooks = () => {
       <hr />
 
       {loading ? (
-        <div className="alert alert-info text-center">Loading ...</div>
+        <div className="alert alert-info text-center">
+          Loading ...
+        </div>
       ) : (
         <div>
           <blockquote className="blockquote text-end">
@@ -31,7 +33,10 @@ export const MultipleCustomHooks = () => {
         </div>
       )}
       {!loading && (
-        <button onClick={() => increment()} className="btn btn-primary">
+        <button
+          onClick={() => increment()}
+          className="btn btn-primary"
+        >
           Siguiente
         </button>
       )}

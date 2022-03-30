@@ -27,9 +27,9 @@ const TodoItem = ({
 
 TodoItem.propTypes = {
   todo: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired,
-  handleComplete: PropTypes.func.isRequired,
-  handleRemoveTodo: PropTypes.func.isRequired,
+  // index: PropTypes.number.isRequired,
+  // handleComplete: PropTypes.func.isRequired,
+  // handleRemoveTodo: PropTypes.func.isRequired,
 };
 
 export default TodoItem;
