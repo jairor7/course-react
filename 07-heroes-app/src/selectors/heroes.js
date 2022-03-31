@@ -1,6 +1,9 @@
 import { heroes } from "../data/heroes";
 
-const getHeroById = (id) => heroes.find((h) => h.id === id);
+const getHeroById = (id) => {
+  console.log("getHeroByIdcall");
+  return heroes.find((h) => h.id === id);
+};
 
 const getHeroesByPublisher = (publisher) => {
   const validPublisher = ["DC Comics", "Marvel Comics"];
