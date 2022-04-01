@@ -3,22 +3,34 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroById } from "../../selectors/heroes";
 
 export const HeroScreen = () => {
+  // const [counter, setCounter] = useState(0);
   const { heroId } = useParams();
   const hero = useMemo(() => getHeroById(heroId), [heroId]);
   const navigate = useNavigate();
   if (!hero) {
     return <Navigate to="/" />;
   }
-  const { superhero, publisher, alter_ego, first_appearance, characters, id } =
-    hero;
+  const {
+    superhero,
+    publisher,
+    alter_ego,
+    first_appearance,
+    characters,
+    id,
+  } = hero;
   const imagePath = `/assets/${id}.jpg`;
   const handleReturn = () => {
     navigate(-1);
+    // setCounter(counter + 1);
   };
   return (
     <div className="row mt-5">
       <div className="col-4">
-        <img src={imagePath} alt={superhero} className="img-thumbnail" />
+        <img
+          src={imagePath}
+          alt={superhero}
+          className="img-thumbnail animate__animated animate__fadeInLeft"
+        />
       </div>
 
       <div className="col-8">
@@ -38,7 +50,11 @@ export const HeroScreen = () => {
         <h5 className="mt-3">Characters</h5>
         <p>{characters}</p>
 
-        <button className="btn btn-outline-info" onClick={handleReturn}>
+        <button
+          className="btn btn-outline-info"
+          onClick={handleReturn}
+        >
+          {/* Regresar {counter} */}
           Regresar
         </button>
       </div>
