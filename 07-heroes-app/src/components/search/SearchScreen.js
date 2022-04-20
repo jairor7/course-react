@@ -1,26 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import { getHeroByName } from "../../selectors/heroes";
 import { HeroCards } from "../heros/HeroCards";
 export const SearchScreen = () => {
   const [heroesFilter, setHeroesFilter] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
-  const [form, handleInputChange] = useForm({
+  const [{ searchText }, handleInputChange] = useForm({
     searchText: searchParams.get("hero") || "",
   });
-  const { searchText } = form;
-  const heroesSearched = searchParams.get("hero");
+  const navigate = useNavigate();
 
   useEffect(() => {
+    const heroesSearched = searchParams.get("hero");
     if (!!heroesSearched)
       setHeroesFilter(getHeroByName(heroesSearched));
     else setHeroesFilter([]);
-  }, [heroesSearched]);
+  }, [searchParams]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSearchParams({ hero: form.searchText });
+    // Esta linea tambien funciona pero no con las pruebas
+    setSearchParams({ hero: searchText });
+    // navigate(`?hero=${searchText}`);
   };
 
   return (

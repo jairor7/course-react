@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <SearchScreen /> Debe de mostrar a Batman y el input con el valor del queryString 1`] = `
+Array [
+  <h1>
+    Search Screen
+  </h1>,
+  <hr />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h5>
+        Search
+      </h5>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-8"
+          >
+            <input
+              autoComplete="off"
+              className="form-control"
+              name="searchText"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value="batman"
+            />
+          </div>
+          <div
+            className="col-4"
+          >
+            <button
+              className="btn btn-outline-primary"
+              type="submit"
+            >
+              Buscar...
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h5>
+        Result
+      </h5>
+      <hr />
+      <div
+        className="col animate__animated animate__fadeIn"
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="row no-gutters"
+          >
+            <div
+              className="col-5"
+            >
+              <img
+                alt="Batman"
+                className="card-img-top"
+                src="/assets/dc-batman.jpg"
+              />
+            </div>
+            <div
+              className="col-7"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  className="text-muted"
+                >
+                  Detective Comics #27
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Mas información
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas en el <SearchScreen /> Debe de mostrar un error, si no se encuentra el hero 1`] = `
+Array [
+  <h1>
+    Search Screen
+  </h1>,
+  <hr />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h5>
+        Search
+      </h5>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-8"
+          >
+            <input
+              autoComplete="off"
+              className="form-control"
+              name="searchText"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value="123"
+            />
+          </div>
+          <div
+            className="col-4"
+          >
+            <button
+              className="btn btn-outline-primary"
+              type="submit"
+            >
+              Buscar...
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h5>
+        Result
+      </h5>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        No hay resultados: 
+        123
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas en el <SearchScreen /> Debe mostrar el componente correctamente 1`] = `
+Array [
+  <h1>
+    Search Screen
+  </h1>,
+  <hr />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h5>
+        Search
+      </h5>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-8"
+          >
+            <input
+              autoComplete="off"
+              className="form-control"
+              name="searchText"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className="col-4"
+          >
+            <button
+              className="btn btn-outline-primary"
+              type="submit"
+            >
+              Buscar...
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h5>
+        Result
+      </h5>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Buscar un héroe
+      </div>
+    </div>
+  </div>,
+]
+`;
