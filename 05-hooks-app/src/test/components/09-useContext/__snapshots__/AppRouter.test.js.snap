@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <AppRouter /> Debe de mostrarse correctamente 1`] = `
+Array [
+  <nav>
+    <ul
+      className="nav nav-tabs"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/login"
+          onClick={[Function]}
+        >
+          Login
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <div>
+    <h1>
+      HomeScreen
+    </h1>
+    <hr />
+    <pre>
+      {
+   "id": 1,
+   "name": "Fernando"
+}
+    </pre>
+  </div>,
+]
+`;
