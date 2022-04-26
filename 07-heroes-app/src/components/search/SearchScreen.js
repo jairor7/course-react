@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+// import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import { getHeroByName } from "../../selectors/heroes";
 import { HeroCards } from "../heros/HeroCards";
@@ -9,7 +10,7 @@ export const SearchScreen = () => {
   const [{ searchText }, handleInputChange] = useForm({
     searchText: searchParams.get("hero") || "",
   });
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const heroesSearched = searchParams.get("hero");

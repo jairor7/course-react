@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { herosImages } from "../../helpers/heroImages";
 import { getHeroById } from "../../selectors/heroes";
 
 export const HeroScreen = () => {
@@ -18,7 +19,7 @@ export const HeroScreen = () => {
     characters,
     id,
   } = hero;
-  const imagePath = `/assets/${id}.jpg`;
+  const imagePath = herosImages(`./${id}.jpg`);
   const handleReturn = () => {
     navigate(-1);
     // setCounter(counter + 1);
