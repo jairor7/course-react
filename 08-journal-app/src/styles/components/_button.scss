@@ -1,0 +1,35 @@
+button.small {
+  padding: $size-xxs;
+}
+button.default {
+  padding: $size-xs;
+}
+button.large {
+  padding: $size-sm;
+}
+
+button.primary {
+  background-color: $primaryColor;
+  color: $white;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $secondaryColor;
+  }
+  &:disabled {
+    background-color: $light-grey;
+    cursor: not-allowed;
+  }
+}
+
+button.text {
+  background-color: transparent;
+  color: $white;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $light-grey;
+  }
+  &:disabled {
+    background-color: $light-grey;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,50 @@
+.journal__main-content {
+  display: flex;
+  background-color: $primaryColor;
+}
+
+.journal__sidebar {
+  background-color: $dark-grey;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 10rem;
+}
+
+.journal__sidebar-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: $size-m;
+  margin: 0 $size-m;
+  button {
+    width: auto;
+    padding: $size-xs;
+  }
+}
+
+.journal__sidebar-navbar h4 {
+  font-weight: lighter;
+  white-space: nowrap;
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.journal__new-entry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: $size-m 0;
+  i {
+    font-size: 8rem;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $primaryColor;
+    transform: scale(1.05);
+  }
+}
