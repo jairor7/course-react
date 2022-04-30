@@ -15,7 +15,7 @@
 .journal__sidebar-navbar {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: space-between;
   gap: $size-m;
   margin: 0 $size-m;
   button {
@@ -47,4 +47,31 @@
     color: $primaryColor;
     transform: scale(1.05);
   }
+}
+
+.journal__entries {
+  margin-top: $size-m;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.journal__entry {
+  background-color: $white;
+  border-radius: $size-xs;
+  color: $dark-grey;
+  display: flex;
+  margin-bottom: $size-m;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.journal__entry-picture {
+  min-height: 7.5rem;
+  min-width: 7.5rem;
+}
+
+.journal__entry-title {
+}
+
+.journal__entry-content {
 }
