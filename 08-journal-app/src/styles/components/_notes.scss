@@ -1,0 +1,55 @@
+.notes__main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.notes__appbar {
+  align-items: center;
+  background-color: $secondaryColor;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: $size-m $size-l;
+  button {
+    width: auto;
+  }
+}
+
+.notes__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $size-m $size-l;
+  overflow-y: auto;
+}
+
+.notes__title-input,
+.notes__textarea {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.notes__title-input {
+  color: $dark-grey;
+  font-size: $size-lg;
+  font-weight: 700;
+  margin-bottom: $size-m;
+}
+
+.notes__textarea {
+  border: 1px solid black;
+  color: $dark-grey;
+  font-size: $size-base;
+  flex: 1 1 auto;
+  resize: none;
+  margin-bottom: $size-m;
+}
+
+.notes__image img {
+  box-shadow: 3px 3px 10px $dark-grey;
+  height: 15rem;
+}

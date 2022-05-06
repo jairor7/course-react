@@ -1,24 +1,22 @@
 import React from "react";
 
-export const JournalEntry = (props) => {
-  console.log(props);
+export const JournalEntry = () => {
   return (
     <div className="journal__entry">
-      <div
-        className="journal__entry-picture"
-        style={{
-          backgroundImage: `url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk94uJ64P52uVxVRRqt5hntKJL8_2_RNNFQA&usqp=CAU)`,
-          backgroundSize: "cover",
-        }}
-      ></div>
+      <div className="journal__entry-picture" style={{}}></div>
 
       <div className="journal__entry-body">
         <p className="journal__entry-title">Un día nuevo</p>
         <p className="journal__entry-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Non reprehenderit Lorem eu consequat ut quis. Occaecat anim
+          nisi nostrud amet labore mollit consectetur tempor esse.
+          Dolor occaecat nostrud sunt ullamco cillum Lorem dolore.z
         </p>
+      </div>
+
+      <div className="journal__entry-date">
+        <span>Monday</span>
+        <h4>28</h4>
       </div>
     </div>
   );
